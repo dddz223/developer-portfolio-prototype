@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Portfolio Prototype</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header and navigation stay at the top of the page. -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#home" class="logo">Student Portfolio</a>
+
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home section introduces the student and their focus. -->
+    <section id="home" class="section hero-section">
+      <div class="section-content">
+        <p class="eyebrow">Computer Science Student / Developer</p>
+        <h1>Hello, I am Your Name</h1>
+        <p class="hero-text">
+          I am a computer science student interested in building practical software,
+          solving real-world problems, and improving my development skills.
+        </p>
+        <a href="#projects" class="primary-button">View Projects</a>
+      </div>
+    </section>
+
+    <!-- About section gives a short overview of background and interests. -->
+    <section id="about" class="section">
+      <div class="section-content">
+        <h2>About Me</h2>
+        <p>
+          I am currently studying computer science and learning how to design,
+          build, and test software applications. I enjoy turning simple ideas
+          into working prototypes and learning from each project.
+        </p>
+        <p>
+          My interests include web development, problem solving, databases,
+          user-friendly interfaces, and software that helps people manage daily tasks.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects section highlights one main project and includes placeholders. -->
+    <section id="projects" class="section alternate-section">
+      <div class="section-content">
+        <h2>Projects</h2>
+
+        <article class="project-card featured-project">
+          <div class="project-heading">
+            <p class="project-label">Main Project</p>
+            <h3>Tennis Facility Management App</h3>
+          </div>
+
+          <div class="project-details">
+            <div>
+              <h4>Problem</h4>
+              <p>
+                Tennis lesson and facility management can become difficult when
+                schedules, lesson records, and student progress are handled manually.
+              </p>
+            </div>
+
+            <div>
+              <h4>Solution</h4>
+              <p>
+                The app is designed to track lesson sessions, manage scheduling,
+                and keep records in one organized system.
+              </p>
+            </div>
+
+            <div>
+              <h4>Role</h4>
+              <p>
+                Developer responsible for planning the prototype structure,
+                designing core screens, and implementing basic app logic.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Personal Study Planner</h3>
+            <p>
+              A placeholder project for organizing assignments, deadlines,
+              and weekly study goals.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <h3>Simple Weather Dashboard</h3>
+            <p>
+              A placeholder web project that displays weather information
+              using a clean and readable interface.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section includes simple placeholder contact information. -->
+    <section id="contact" class="section">
+      <div class="section-content">
+        <h2>Contact</h2>
+        <p>
+          I am open to learning opportunities, feedback, and collaboration on small projects.
+        </p>
+
+        <div class="contact-list">
+          <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer gives a simple ending to the one-page site. -->
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Your Name. Portfolio prototype.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
