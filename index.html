@@ -21,6 +21,7 @@
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -30,14 +31,30 @@
   <main>
     <!-- Home section introduces the student and their focus. -->
     <section id="home" class="section hero-section">
-      <div class="section-content">
-        <p class="eyebrow">Computer Science Student / Developer</p>
-        <h1>Hello, I am Your Name</h1>
-        <p class="hero-text">
-          I am a computer science student interested in building practical software,
-          solving real-world problems, and improving my development skills.
-        </p>
-        <a href="#projects" class="primary-button">View Projects</a>
+      <div class="section-content hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">Computer Science Student / Developer</p>
+          <h1>Your Name</h1>
+          <p class="hero-text">
+            I build simple, practical web projects while learning core computer
+            science concepts. I am interested in solving real problems with clean
+            interfaces, organized code, and steady improvement.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="primary-button">View Projects</a>
+            <a href="#contact" class="secondary-button">Contact Me</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Portfolio summary">
+          <p class="card-label">Current Focus</p>
+          <h2>Building useful student projects</h2>
+          <ul>
+            <li>Web development fundamentals</li>
+            <li>Problem solving and data organization</li>
+            <li>Project planning and documentation</li>
+          </ul>
+        </aside>
       </div>
     </section>
 
@@ -57,10 +74,38 @@
       </div>
     </section>
 
+    <!-- Skills section shows the technologies and topics being practiced. -->
+    <section id="skills" class="section skills-section">
+      <div class="section-content">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>Technologies I Am Learning</h2>
+        </div>
+
+        <div class="skill-list" aria-label="Skills list">
+          <span class="skill-badge">HTML</span>
+          <span class="skill-badge">CSS</span>
+          <span class="skill-badge">JavaScript</span>
+          <span class="skill-badge">GitHub Pages</span>
+          <span class="skill-badge">Databases</span>
+          <span class="skill-badge">Problem Solving</span>
+          <span class="skill-badge">UI Design</span>
+          <span class="skill-badge">Project Planning</span>
+        </div>
+      </div>
+    </section>
+
     <!-- Projects section highlights one main project and includes placeholders. -->
     <section id="projects" class="section alternate-section">
       <div class="section-content">
-        <h2>Projects</h2>
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Projects</h2>
+          <p>
+            These projects show my practice with planning, front-end structure,
+            and building software around a clear user problem.
+          </p>
+        </div>
 
         <article class="project-card featured-project">
           <div class="project-heading">
@@ -93,23 +138,38 @@
               </p>
             </div>
           </div>
+          <div class="project-tags">
+            <span>Scheduling</span>
+            <span>Records</span>
+            <span>Prototype</span>
+          </div>
         </article>
 
         <div class="project-grid">
           <article class="project-card">
+            <p class="project-label">Placeholder Project</p>
             <h3>Personal Study Planner</h3>
             <p>
               A placeholder project for organizing assignments, deadlines,
               and weekly study goals.
             </p>
+            <div class="project-tags">
+              <span>Planning</span>
+              <span>Student Tool</span>
+            </div>
           </article>
 
           <article class="project-card">
+            <p class="project-label">Placeholder Project</p>
             <h3>Simple Weather Dashboard</h3>
             <p>
               A placeholder web project that displays weather information
               using a clean and readable interface.
             </p>
+            <div class="project-tags">
+              <span>API Practice</span>
+              <span>Dashboard</span>
+            </div>
           </article>
         </div>
       </div>

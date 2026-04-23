@@ -24,11 +24,11 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Highlight the navigation link for the section currently in view.
-  window.addEventListener("scroll", function () {
+  function updateActiveLink() {
     let currentSectionId = "";
 
     sections.forEach(function (section) {
-      const sectionTop = section.offsetTop - 120;
+      const sectionTop = section.offsetTop - 140;
 
       if (window.scrollY >= sectionTop) {
         currentSectionId = section.getAttribute("id");
@@ -42,5 +42,8 @@ document.addEventListener("DOMContentLoaded", function () {
         link.classList.add("active");
       }
     });
-  });
+  }
+
+  window.addEventListener("scroll", updateActiveLink);
+  updateActiveLink();
 });
