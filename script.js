@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelector(".nav-links");
   const navItems = document.querySelectorAll(".nav-links a");
   const sections = document.querySelectorAll("main section");
+  const header = document.querySelector(".site-header");
   const year = document.querySelector("#year");
 
   // Show the current year in the footer.
@@ -26,9 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Highlight the navigation link for the section currently in view.
   function updateActiveLink() {
     let currentSectionId = "";
+    const headerOffset = header.offsetHeight + 70;
 
     sections.forEach(function (section) {
-      const sectionTop = section.offsetTop - 140;
+      const sectionTop = section.offsetTop - headerOffset;
 
       if (window.scrollY >= sectionTop) {
         currentSectionId = section.getAttribute("id");
